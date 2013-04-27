@@ -1,0 +1,32 @@
+{
+  "name": "livewatch",
+  "description": "LiveReload compatible filesystem watcher and build system runner",
+  "author": "Simen Brekken <simen@unfold.no>",
+  "keywords": [
+    "livereload",
+    "watch",
+    "build"
+  ],
+  "version": "0.0.1",
+  "license": "MIT",
+  "bin": {
+    "livewatch": "./bin/livewatch"
+  },
+  "main": "./lib/livewatch",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unfold/livewatch"
+  },
+  "dependencies": {
+    "commander": "~1.1.1",
+    "watchr": "~2.4.3",
+    "livereload-server": "~0.2.3"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "engines": {
+    "node": ">= 0.8"
+  }
+}
