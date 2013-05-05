@@ -16,7 +16,7 @@ if (program.args.length == 3) {
         sources = program.args[1].split(':'),
         target = program.args[2].split(':')
 
-    livewatch.apply(null, program.args)
+    livewatch(command, sources, target)
 } else {
     program.help()
 }
