@@ -1,22 +1,20 @@
 #!/usr/bin/env node
 
 var program = require('commander'),
-    path = require('path'),
-    fs = require('fs'),
     livewatch = require('..')
 
 program
     .version(require('../package.json').version)
-    .usage('<command> <source(s)> <target(s)')
+    .option('-d, --debug', 'Output debug information')
+    .usage('<command> <source(s)> <target(s)>')
     .parse(process.argv)
-
 
 if (program.args.length == 3) {
     var command = program.args[0],
         sources = program.args[1].split(':'),
         target = program.args[2].split(':')
 
-    livewatch(command, sources, target)
+    livewatch(command, sources, target, program, program.debug)
 } else {
     program.help()
 }
