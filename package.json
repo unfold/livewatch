@@ -18,8 +18,8 @@
     "url": "https://github.com/unfold/livewatch"
   },
   "dependencies": {
-    "commander": "~1.2.0",
-    "watchr": "~2.4.3",
+    "commander": "~2.9.0",
+    "watchr": "~3.0.1",
     "livereload-server": "~0.2.3"
   },
   "devDependencies": {
